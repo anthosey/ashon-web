@@ -1,0 +1,508 @@
+<!-- <ion-header> -->
+  <ion-toolbar class="menu-top ion-hide-sm-up">
+    <ion-buttons slot="start">
+      <ion-menu-button id="mainmenu"></ion-menu-button>
+    </ion-buttons>
+    <!-- <ion-title>dash</ion-title> -->
+    <ion-grid>
+      <ion-row>
+        <ion-col size-sm="5" offset-sm="1" class="ion-text-start contact-space" >
+          <a href="#" id="email" class="fa fa-envelope"></a>
+          <!-- <span id="email1">info@ashonng.org</span>&nbsp; -->
+          <ion-note color="light"><ion-icon name="call"></ion-icon> +2341-4543-168</ion-note>
+        </ion-col>
+
+
+        <ion-col size-sm="5" class="ion-text-end">
+          <!-- <ion-buttons slot="end"> -->
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+         
+            <!-- <ion-menu-button menu="first"></ion-menu-button> -->
+          <!-- <ion-button><ion-icon name="person">Login</ion-icon></ion-button> -->
+        <!-- </ion-buttons> -->
+        </ion-col>
+
+        <!-- <ion-col size-sm="2" class="ion-text-end">
+          <a href="#" class="fa fa-user"></a><span>Login</span>
+        </ion-col> -->
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+<!-- </ion-header> -->
+
+<ion-content>
+    
+  <div class="head-logo">
+    <ion-row >
+
+      <ion-col size-sm="3" offset-sm="1" class="ion-text-left head-space ion-hide-sm-down">
+        <ion-note><ion-icon name="mail"></ion-icon> contact@ashonng.org</ion-note><br />
+        
+          <ion-label style="font-size: 1.5rem;"><ion-icon name="call"></ion-icon> +2341-4543168</ion-label>
+        </ion-col>
+      
+        <ion-col size-sm="4" size-xs="12" class="ion-text-center">
+          <!-- <img src="/assets/img/logo1.png">
+           -->
+           <div style="height: 150px; background-image: url('assets/img/logo1.png'); background-position: center;
+                background-repeat: no-repeat;"></div>
+        </ion-col>
+
+        <ion-col size-sm="3" class="ion-text-end head-space ion-hide-sm-down">
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="login" class="fa fa-user"></a><span style="cursor: pointer" (click)="login()">Login</span>
+        </ion-col>
+    </ion-row>
+  </div>
+
+  <div id="ribbon-section" class="ion-hide-sm-down">
+    <!-- Category Section -->
+    <ion-row>
+      <ion-col size-sm="7" offset-sm="1"
+       id="links" 
+       class="ion-text-start"
+       style="padding-right: .5rem;">
+       
+         
+         
+         <a href="home" class="active">Home</a>
+         <a href="about">About us</a>
+         <a href="gallery">Gallery</a>
+         <a href="code">Code of Conduct</a>
+         <a href="pub-members">Members</a>
+         <a href="downloads">Downloads</a>
+         <a href="contact">Contact us</a>
+
+
+       </ion-col>
+       
+   
+       <ion-col size-sm="3"
+       class="ion-hide-sm-down ion-text-end ion-no-padding ion-no-margin ion-text-end" 
+       id="menu-phone">
+         <span>      
+         <a href="#" class="fa fa-phone ion-no-padding"></a>
+             +23480-2344-3614</span> 
+         </ion-col>
+       </ion-row>
+  </div>
+  
+  <!-- Display -->
+  <div class="ion-no-padding ion-no-margin">
+    <ion-row>
+      <ion-col size-sm="12" size-xs="12" class="ion-no-padding">
+        <ion-slides pager="true" [options]="slideOpts_fade">
+          <ion-slide>
+            <img src="/assets/img/1.jpg" />
+            <!-- <h1>Slide 1</h1> -->
+          </ion-slide>
+          
+          <ion-slide>
+            <img src="/assets/img/2.jpg" />
+            <!-- <h1>Slide 1</h1> -->
+          </ion-slide>
+
+          <ion-slide>
+            <img src="/assets/img/3.jpg" />
+            <!-- <h1>Slide 1</h1> -->
+          </ion-slide>
+
+          <!-- <ion-slide>
+            <img src="/assets/img/4.jpg" />
+          </ion-slide> -->
+        </ion-slides>
+      </ion-col>
+    </ion-row>
+  </div>
+
+  <!-- End of Display -->
+
+  <!-- <ion-grid> -->
+
+        <!-- End Category Section -->
+
+      
+<div class="ion-text-center space-header" >
+      <ion-row> <!-- Featured Products-->
+        <ion-col size-sm="10" 
+        offset-sm="1">
+          <!-- <ion-card>
+            <ion-card-header>FEATURED PRODUCTS -->
+              Membership
+            <!-- </ion-card-header>
+          </ion-card> -->
+            </ion-col>
+      </ion-row>
+</div>
+
+      <ion-row>
+        <ion-col size-sm="10" offset-sm="1">
+          <ion-grid>
+            <ion-row>
+            
+              <ion-col size-sm="6" size-xs="12" >
+                <div style="height: 230px; background-image: url('assets/img/member.jpg'); background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover; border-radius: .8rem;"></div>
+              </ion-col>
+
+              <ion-col size-sm="6" size-xs="12" >
+                <p class="ion-text-justify">The membership of the Association is open to all Financial Institutions licensed to operate as Stockbroking/Securities Dealing Houses in Nigeria by The Nigerian Stock Exchange or any registered Securities Exchange and registered by the Securities & Exchange Commission (SEC) and /or other appropriate regulatory bodies. <br /><br />Each member of the Association shall by instrument in writing signed on its behalf by duly authorized persons and delivered to the Association appoint one (1) person and alternate being officers of such member to be member’s representative to partake in the affairs of the Association.
+                </p>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+          
+        </ion-col>
+        
+      </ion-row>
+
+
+      <div class="ion-text-center space-header" >
+        <ion-row> <!-- Featured Products-->
+          <ion-col size-sm="10" 
+          offset-sm="1">
+            <!-- <ion-card>
+              <ion-card-header>FEATURED PRODUCTS -->
+                Objectives
+              <!-- </ion-card-header>
+            </ion-card> -->
+              </ion-col>
+        </ion-row>
+  </div>
+
+  <ion-row>
+    <ion-col size-sm="10" offset-sm="1">
+      <ion-grid>
+        <ion-row>
+        
+          <ion-col size-sm="6" size-xs="12" class="ion-hide-sm-down">
+            <div style="height: 640px; background-image: url('assets/img/obj.jpg'); background-position: center;
+            background-repeat: no-repeat; border-radius: .8rem;
+            background-size: cover; "></div>
+          </ion-col>
+
+
+          <ion-col size-sm="6" size-xs="12" class="ion-hide-sm-up" >
+            <div style="height: 240px; background-image: url('assets/img/obj.jpg'); background-position: center;
+            background-repeat: no-repeat; border-radius: .8rem;
+            background-size: cover; "></div>
+          </ion-col>
+
+          <ion-col size-sm="6" size-xs="12"  class="ion-text-justify">
+            <p class="ion-text-justify">
+              •	To enable members approach or collaborate with the Government, the SEC, the NSE, CIS, NASD, FMDQ and other Trade Point, and Registered Securities Exchanges as a single body in order to facilitate the formulation of policies affecting the Capital Market and other related issues.
+            </p>
+
+            <p lines="none" class="ion-text-justify">
+              •	To proffer sound professional and ethical standards for practitioners and advice on compliance with the set standards in conjunction with the regulatory bodies established by statute.
+            </p>
+
+            <p lines="none" class="ion-text-justify">
+              •	To promote free interplay of market forces.
+            </p>
+
+            <p lines="none" class="ion-text-justify">
+              •	To enable members interact with one another on issues concerning the capital market in general and the Stockbroking Houses/Securities Dealing Firms in particular.
+            </p>
+
+            <p lines="none" class="ion-text-justify">
+              •	To promote and protect the interest of members of the Association in the exercise of their duties as Stockbroking Houses/Securities Dealing Firms.
+            </p>
+
+            <p lines="none" class="ion-text-justify">
+              •	To encourage professional development of Stockbroking House/Securities Dealing Firms through organizing lectures, seminars, workshops, retreats etc.
+            </p>
+
+            <p lines="none" class="ion-text-justify">
+              •	To provide avenue for free flow of information among members and to encourage research on Capital Market Matters/Operations and related areas.
+            </p>
+
+            <p lines="none" class="ion-text-justify">
+              •	To promote either on its own or in conjunction with other parties in any investment that will benefit the Association and the Capital Market.
+            </p>
+
+            <p lines="none" class="ion-text-justify">
+              •	To relate with other professional bodies with a view to building a viable Nigerian Financial Markets.   
+            </p>
+
+            <p lines="none" class="ion-text-justify">
+              •	To nominate for representation members in good standing on the Council of the NSE and any other relevant registered Exchanges in Nigeria.
+            </p>
+
+
+
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      
+    </ion-col>
+    
+  </ion-row>
+
+
+  <div class="ion-text-center space-header" >
+    <ion-row>
+      <ion-col size-sm="10" 
+      offset-sm="1">
+        <!-- <ion-card>
+          <ion-card-header>FEATURED PRODUCTS -->
+            Governing Council Members
+          <!-- </ion-card-header>
+        </ion-card> -->
+          </ion-col>
+    </ion-row>
+  </div>
+
+<!-- Council Members List -->
+  <ion-row>
+    <ion-col size-sm="10" offset-sm="1">
+      <ion-grid>
+        <ion-row>
+        
+          <ion-col size-sm="3" size-xs="12" size-md="3">
+            <ion-card class="no-space">
+              
+              <ion-card-content id="card-content" class="ion-text-center no-space">
+                <img src= "assets/img/council-members/1.jpg" class="no-space">
+                <ion-card-title>Onyenwechukwu P. Ezeagu</ion-card-title>
+                <ion-card-subtitle>Chairman</ion-card-subtitle>
+                
+              </ion-card-content>
+            </ion-card>  
+            
+          </ion-col>
+
+
+          <ion-col size-sm="3" size-xs="12" size-md="3">
+            <ion-card class="no-space">
+              
+              <ion-card-content id="card-content" class="ion-text-center no-space">
+                <img src= "assets/img/council-members/2.jpg" class="no-space">
+                <ion-card-title>Sam Onukwue</ion-card-title>
+                <ion-card-subtitle>First Vice Chairman</ion-card-subtitle>
+                
+              </ion-card-content>
+            </ion-card>  
+            
+          </ion-col>
+
+          <ion-col size-sm="3" size-xs="12" size-md="3">
+            <ion-card class="no-space">
+              
+              <ion-card-content id="card-content" class="ion-text-center no-space">
+                <img src= "assets/img/council-members/3.jpg" class="no-space">
+                <ion-card-title>Sehinde Adenagbe</ion-card-title>
+                <ion-card-subtitle>Second Vice Chairman</ion-card-subtitle>
+                
+              </ion-card-content>
+            </ion-card>  
+            
+          </ion-col>
+
+          <ion-col size-sm="3" size-xs="12" size-md="3">
+            <ion-card class="no-space">
+              
+              <ion-card-content id="card-content" class="ion-text-center no-space">
+                <img src= "assets/img/council-members/4.jpg" class="no-space">
+                <ion-card-title>Olubunmi Ajayi</ion-card-title>
+                <ion-card-subtitle>Treasurer</ion-card-subtitle>
+                
+              </ion-card-content>
+            </ion-card>  
+            
+          </ion-col>
+
+          <ion-col size-sm="3" size-xs="12" size-md="3">
+            <ion-card class="no-space">
+              
+              <ion-card-content id="card-content" class="ion-text-center no-space">
+                <img src= "assets/img/council-members/5.jpg" class="no-space">
+                <ion-card-title>Ifeyinwa Ejezie</ion-card-title>
+                <ion-card-subtitle>PRO 1</ion-card-subtitle>
+                
+              </ion-card-content>
+            </ion-card>  
+            
+          </ion-col>
+
+
+          <ion-col size-sm="3" size-xs="12" size-md="3">
+            <ion-card class="no-space">
+              
+              <ion-card-content id="card-content" class="ion-text-center no-space">
+                <img src= "assets/img/council-members/6.jpg" class="no-space">
+                <ion-card-title>Oluwadare Adejumo</ion-card-title>
+                <ion-card-subtitle>Bus Dev/Membership</ion-card-subtitle>
+                
+              </ion-card-content>
+            </ion-card>  
+            
+          </ion-col>
+
+
+
+          <ion-col size-sm="3" size-xs="12" size-md="3">
+            <ion-card class="no-space">
+              
+              <ion-card-content id="card-content" class="ion-text-center no-space">
+                <img src= "assets/img/council-members/7.jpg" class="no-space">
+                <ion-card-title>Andrew Tsaku</ion-card-title>
+                <ion-card-subtitle>PRO 2</ion-card-subtitle>
+                
+              </ion-card-content>
+            </ion-card>  
+            
+          </ion-col>
+
+
+          <ion-col size-sm="3" size-xs="12" size-md="3">
+            <ion-card class="no-space">
+              
+              <ion-card-content id="card-content" class="ion-text-center no-space">
+                <img src= "assets/img/council-members/8.jpg" class="no-space">
+                <ion-card-title>Emeka Madubuike</ion-card-title>
+                <ion-card-subtitle>Ex-Officio/Immediate Past Chairman</ion-card-subtitle>
+                
+              </ion-card-content>
+            </ion-card>  
+            
+          </ion-col>
+
+
+        </ion-row>
+      </ion-grid>
+      
+    </ion-col>
+    
+  </ion-row>
+
+
+
+  <!-- Image background with Text-on example-->
+      <!-- <ion-row> 
+        <ion-col size-sm="10" 
+        offset-sm="1" 
+        class="ion-text-center space-header" 
+        >
+        <div style="height: 300px; background-image: url('assets/img/logo1.png'); background-position: center;
+                background-repeat: no-repeat;
+                background-size: 100% 100%; ">
+              <div style="position:fixed center; padding: 4rem;  background-color: black; opacity: .6;"  >
+              <p style="opacity: .9; color: #fff; padding:4rem; font-size: 3rem;">Helloooo</p>
+              </div>
+              </div>
+          
+              PRODUCTS ON PROMOTIONS
+          
+        </ion-col>
+      </ion-row> -->
+    
+      
+    
+    
+    <!-- </ion-grid> -->
+  
+    <ion-footer class="ion-no-border footer gradient1">
+      <!-- <ion-toolbar> -->
+        <!-- <ion-title>Footer - No Border</ion-title> -->
+        <ion-grid>
+          <ion-row>
+            <ion-col size-sm="4"  size-xs="12" offset-sm="1" class="text ion-align-items-stretch">
+              <!-- <img src="/assets/img/ashon-brand.png" > -->
+              <div class="footer-logo"></div>
+              <ion-grid>
+                <ion-row>
+                  <ion-col>
+                    <ion-note><ion-icon name="location"></ion-icon>Medife House(3rd Floor), 58/60 Broad Street, Lagos Island, Lagos.</ion-note>
+                  </ion-col>
+                </ion-row>
+    
+                  <ion-row>
+                    <ion-col>
+                      <ion-note><ion-icon name="call"></ion-icon> +23480-2344-3614</ion-note>
+                    </ion-col>
+                  </ion-row>
+    
+                  <ion-row>
+                    <ion-col>
+                      <ion-note><ion-icon name="mail"></ion-icon> info@ashonng.org</ion-note>
+                    </ion-col>
+                  </ion-row>
+              </ion-grid>
+    
+              
+            </ion-col>
+            <ion-col size-sm="3" size-xs="6"><span class="footer-bold">Useful links</span>
+              <ion-grid>
+                <ion-row>
+                  <ion-col>
+                    <ion-note><a href="about">About us</a></ion-note>
+                  </ion-col>
+                </ion-row>
+    
+                <ion-row>
+                  <ion-col>
+                    <ion-note><a href="gallery">Gallery</a></ion-note>
+                  </ion-col>
+                </ion-row>
+
+                <ion-row>
+                  <ion-col>
+                    <ion-note><a href="members">Members</a></ion-note>
+                  </ion-col>
+                </ion-row>
+
+                <ion-row>
+                  <ion-col>
+                    <ion-note><a href="downloads">Downloads</a></ion-note>
+                  </ion-col>
+                </ion-row>
+
+
+                <ion-row>
+                  <ion-col>
+                    <ion-note><a href="contact">Contact us</a></ion-note>
+                  </ion-col>
+                </ion-row>
+
+              </ion-grid>
+            </ion-col>
+            <ion-col size-sm="3" size-xs="6">
+              <span class="footer-bold">Join our new letters now</span>
+              <ion-grid>
+                <ion-row>
+                  <ion-col>
+                    <ion-note>Get email updates about our Association</ion-note>
+                  </ion-col>
+                </ion-row>
+    
+                <ion-row>
+                  <ion-col>
+                    <ion-input placeholder ="Please write your email" color="dark" clearinput type="text"></ion-input><ion-button>Subscribe</ion-button>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+            </ion-col>
+            
+        
+          </ion-row>
+    <ion-row>
+      <ion-col size-sm="10" offset-sm="1">
+        <ion-footer class="ion-text-center">
+          <ion-note class="ion-margin">
+            ashonng.org &copy;2021 Built by <a href="#" target="_blank">Photizo Technologies</a></ion-note>
+        </ion-footer>
+      </ion-col>
+    </ion-row>
+          
+        </ion-grid>
+      <!-- </ion-toolbar> -->
+    
+    </ion-footer>
+    <ion-fab vertical="top" horizontal="end" slot="fixed" class="ion-hide-sm-up fab">
+      <ion-fab-button (click)="showCategories('myPop')"><ion-icon name="ellipsis-vertical-outline"></ion-icon></ion-fab-button>
+    </ion-fab>
+</ion-content>
